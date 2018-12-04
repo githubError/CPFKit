@@ -1,0 +1,112 @@
+//
+//  NSData+CPFAdd.h
+//  CPFKit_Example
+//
+//  Created by 崔鹏飞 on 2018/11/29.
+//  Copyright © 2018 崔鹏飞. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface NSData (CPFAdd)
+
+#pragma mark - Hash
+
+- (NSString *)md2String;
+
+- (NSData *)md2Data;
+
+- (NSString *)md4String;
+
+- (NSData *)md4Data;
+
+- (NSString *)md5String;
+
+- (NSData *)md5Data;
+
+- (NSString *)sha1String;
+
+- (NSData *)sha1Data;
+
+- (NSString *)sha224String;
+
+- (NSData *)sha224Data;
+
+- (NSString *)sha256String;
+
+- (NSData *)sha256Data;
+
+- (NSString *)sha384String;
+
+- (NSData *)sha384Data;
+
+- (NSString *)sha512String;
+
+- (NSData *)sha512Data;
+
+- (NSString *)hmacMD5StringWithKey:(NSString *)key;
+
+- (NSData *)hmacMD5DataWithKey:(NSData *)key;
+
+- (NSString *)hmacSHA1StringWithKey:(NSString *)key;
+
+- (NSData *)hmacSHA1DataWithKey:(NSData *)key;
+
+- (NSString *)hmacSHA224StringWithKey:(NSString *)key;
+
+- (NSData *)hmacSHA224DataWithKey:(NSData *)key;
+
+- (NSString *)hmacSHA256StringWithKey:(NSString *)key;
+
+- (NSData *)hmacSHA256DataWithKey:(NSData *)key;
+
+- (NSString *)hmacSHA384StringWithKey:(NSString *)key;
+
+- (NSData *)hmacSHA384DataWithKey:(NSData *)key;
+
+- (NSString *)hmacSHA512StringWithKey:(NSString *)key;
+
+- (NSData *)hmacSHA512DataWithKey:(NSData *)key;
+
+- (NSString *)crc32String;
+
+- (uint32_t)crc32;
+
+
+#pragma mark - Encrypt and Decrypt
+
+- (nullable NSData *)aes256EncryptWithKey:(NSData *)key iv:(nullable NSData *)iv;
+
+- (nullable NSData *)aes256DecryptWithkey:(NSData *)key iv:(nullable NSData *)iv;
+
+#pragma mark - Encode and decode
+
+- (nullable NSString *)utf8String;
+
+- (nullable NSString *)hexString;
+
++ (nullable NSData *)dataWithHexString:(NSString *)hexString;
+
+- (nullable NSString *)base64EncodedString;
+
++ (nullable NSData *)dataWithBase64EncodedString:(NSString *)base64EncodedString;
+
+- (nullable id)jsonValueDecoded;
+
+@end
+
+
+
+
+@interface NSNumber (CPFAdd)
+
+/**
+ format: @"12", @"12.345", @" -0xFF", @" .23e99 "...
+ */
++ (nullable NSNumber *)numberWithString:(NSString *)string;
+
+@end
+
+NS_ASSUME_NONNULL_END

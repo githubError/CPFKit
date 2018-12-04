@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CPFKit_Example' do
+  pod 'CPFKit', :path => '../'
+
+  target 'CPFKit_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
