@@ -22,7 +22,7 @@ pod 'CPFKit'
 
 ## Author
 
-崔鹏飞, cuipengfei@entgroup.com
+崔鹏飞, 0x00ffee@gmail.com
 
 ## License
 
