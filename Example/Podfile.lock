@@ -1,5 +1,5 @@
 PODS:
-  - CPFKit (0.1.0)
+  - CPFKit (0.0.1)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
@@ -19,7 +19,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CPFKit: 50fde361b662da3181dfb6f3f3cfc3c701661dca
+  CPFKit: 1f41ab89f7de8f021d4180c9f2a2000314c3ddde
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
 
 PODFILE CHECKSUM: 04b737e74b6b79f2765017341a0519da7caf3b5d
